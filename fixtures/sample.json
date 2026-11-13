@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "data_version": "sample-1",
+    "origin": "city",
+    "day_offsets": {
+      "d0": 0
+    },
+    "min_transfer": 5
+  },
+  "collections": {
+    "walks": [
+      {
+        "id": "w1",
+        "revision": 1,
+        "from": "city",
+        "to": "station",
+        "minutes": 10
+      }
+    ],
+    "trips": [
+      {
+        "id": "t1",
+        "revision": 1,
+        "service_day": "d0",
+        "stops": [
+          {
+            "node": "station",
+            "arrive": 480,
+            "depart": 480
+          },
+          {
+            "node": "village",
+            "arrive": 510,
+            "depart": 510
+          }
+        ]
+      }
+    ],
+    "opportunities": [
+      {
+        "id": "o1",
+        "revision": 1,
+        "node": "village",
+        "open": 500,
+        "close": 1000,
+        "weight": 10
+      }
+    ]
+  }
+}
