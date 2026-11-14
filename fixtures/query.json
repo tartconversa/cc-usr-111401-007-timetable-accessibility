@@ -1,0 +1,7 @@
+{
+  "depart_range": [420, 960],
+  "arrive_window": [470, 940],
+  "min_stay": 30,
+  "budget": 300,
+  "max_boardings": 3
+}

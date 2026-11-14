@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "data_version": "rt-1",
+    "origin": "city",
+    "day_offsets": {
+      "d0": 0,
+      "d1": 1440
+    },
+    "min_transfer": 5
+  },
+  "collections": {
+    "walks": [
+      { "id": "w1", "revision": 1, "from": "city", "to": "stA", "minutes": 10 },
+      { "id": "w2", "revision": 1, "from": "stA", "to": "city", "minutes": 10 },
+      { "id": "w3", "revision": 1, "from": "city", "to": "stB", "minutes": 12 },
+      { "id": "w4", "revision": 1, "from": "stB", "to": "city", "minutes": 12 },
+      { "id": "w5", "revision": 1, "from": "city", "to": "garden", "minutes": 25 },
+      { "id": "w6", "revision": 1, "from": "garden", "to": "city", "minutes": 25 },
+      { "id": "w7", "revision": 1, "from": "stA", "to": "stB", "minutes": 4 }
+    ],
+    "trips": [
+      {
+        "id": "t1", "revision": 1, "service_day": "d0",
+        "stops": [
+          { "node": "stA", "arrive": 480, "depart": 480 },
+          { "node": "vill", "arrive": 510, "depart": 510 }
+        ]
+      },
+      {
+        "id": "t2", "revision": 1, "service_day": "d0",
+        "stops": [
+          { "node": "vill", "arrive": 600, "depart": 600 },
+          { "node": "stA", "arrive": 630, "depart": 630 }
+        ]
+      },
+      {
+        "id": "t3", "revision": 1, "service_day": "d0",
+        "stops": [
+          { "node": "stA", "arrive": 700, "depart": 700 },
+          { "node": "vill", "arrive": 730, "depart": 730 }
+        ]
+      },
+      {
+        "id": "t4", "revision": 1, "service_day": "d0",
+        "stops": [
+          { "node": "vill", "arrive": 900, "depart": 900 },
+          { "node": "stA", "arrive": 930, "depart": 930 }
+        ]
+      },
+      {
+        "id": "t5", "revision": 1, "service_day": "d0",
+        "stops": [
+          { "node": "stB", "arrive": 750, "depart": 750 },
+          { "node": "vill", "arrive": 780, "depart": 780 }
+        ]
+      },
+      {
+        "id": "t6", "revision": 1, "service_day": "d0",
+        "stops": [
+          { "node": "stA", "arrive": 840, "depart": 840 },
+          { "node": "hub", "arrive": 860, "depart": 860 }
+        ]
+      },
+      {
+        "id": "t7", "revision": 1, "service_day": "d0",
+        "stops": [
+          { "node": "hub", "arrive": 870, "depart": 870 },
+          { "node": "vill", "arrive": 890, "depart": 890 }
+        ]
+      },
+      {
+        "id": "t8", "revision": 1, "service_day": "d0",
+        "stops": [
+          { "node": "hub", "arrive": 863, "depart": 863 },
+          { "node": "vill", "arrive": 883, "depart": 883 }
+        ]
+      },
+      {
+        "id": "t9", "revision": 1, "service_day": "d0",
+        "stops": [
+          { "node": "stA", "arrive": 1445, "depart": 1445 },
+          { "node": "vill", "arrive": 1470, "depart": 1470 }
+        ]
+      },
+      {
+        "id": "t10", "revision": 1, "service_day": "d1",
+        "stops": [
+          { "node": "vill", "arrive": 90, "depart": 90 },
+          { "node": "stA", "arrive": 120, "depart": 120 }
+        ]
+      },
+      {
+        "id": "t11", "revision": 1, "service_day": "d0",
+        "stops": [
+          { "node": "stA", "arrive": 600, "depart": 600 },
+          { "node": "oneway", "arrive": 630, "depart": 630 }
+        ]
+      }
+    ],
+    "opportunities": [
+      { "id": "o1", "revision": 1, "node": "vill", "open": 480, "close": 1020, "weight": 10 },
+      { "id": "o2", "revision": 1, "node": "vill", "open": 480, "close": 520, "weight": 4 },
+      { "id": "o3", "revision": 1, "node": "nowhere", "open": 480, "close": 1000, "weight": 6 },
+      { "id": "o4", "revision": 1, "node": "garden", "open": 480, "close": 1000, "weight": 5 },
+      { "id": "o5", "revision": 1, "node": "vill", "open": 1430, "close": 1500, "weight": 8 },
+      { "id": "o6", "revision": 1, "node": "oneway", "open": 480, "close": 1000, "weight": 7 }
+    ]
+  }
+}
